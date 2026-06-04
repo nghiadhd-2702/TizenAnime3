@@ -1,0 +1,4 @@
+name = "tizenanime-proxy"
+main = "worker/proxy.js"
+compatibility_date = "2024-01-01"
+account_id = "d50918b630d890c78411885c5edbf9f7"
