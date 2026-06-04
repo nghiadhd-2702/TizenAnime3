@@ -1,5 +1,5 @@
 {
-  "name": "@nghiadhd/tizenanime",
+  "name": "tizenanime",
   "appName": "TizenAnime",
   "version": "1.0.13",
   "description": "Watch anime from Wibu47 on your Samsung TV",
@@ -9,19 +9,8 @@
   "scripts": {
     "build": "esbuild service/index.js --bundle --platform=node --target=node12 --outfile=dist/service.js",
     "dev": "concurrently \"node service/index.js\" \"npx serve app -l 3000 --cors\"",
-    "prepublishOnly": "npm run build",
-    "version": "node scripts/bump-version.js",
-    "release:patch": "npm version patch --no-git-tag-version && npm publish",
-    "release:minor": "npm version minor --no-git-tag-version && npm publish",
-    "release:major": "npm version major --no-git-tag-version && npm publish"
+    "version": "node scripts/bump-version.js"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "files": [
-    "app/",
-    "dist/"
-  ],
   "keys": [
     "MediaPlayPause",
     "MediaPlay",
