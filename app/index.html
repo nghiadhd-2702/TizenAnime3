@@ -74,13 +74,6 @@
   </div>
 </div>
 
-<script>
-  // Always load app.js from GitHub to bypass TizenBrew's local file cache.
-  // index.html is cached by TizenBrew; app.js is not — updates are live.
-  var s = document.createElement('script');
-  s.onerror = function() { var f = document.createElement('script'); f.src = 'app.js'; document.body.appendChild(f); };
-  s.src = 'https://raw.githubusercontent.com/nghiadhd-2702/TizenAnime2/main/app/app.js';
-  document.body.appendChild(s);
-</script>
+<script src="app.js"></script>
 </body>
 </html>
