@@ -39,7 +39,7 @@ async function handleRequest(request) {
     try { fetchHost = new URL(fetchTarget).hostname; } catch (_) {
       return new Response('Invalid url', { status: 400, headers: corsHeaders() });
     }
-    if (!fetchHost.endsWith('wibu47.vip')) {
+    if (!fetchHost.endsWith('wibu47.vip') && !fetchHost.endsWith('streamc.xyz')) {
       return new Response('Host not allowed', { status: 403, headers: corsHeaders() });
     }
     const r = await fetch(fetchTarget, {
