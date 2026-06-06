@@ -4,7 +4,7 @@
 if (new URLSearchParams(location.search).get('sim') === 'tizen') window.tizen = window.tizen || {};
 
 // ── Config ────────────────────────────────────────────────────────────────────
-const VERSION   = '1.0.23';
+const VERSION   = '1.0.24';
 const BASE      = 'https://wibu47.vip';
 const CORS      = 'https://tizenanime-proxy.nghiadhd.workers.dev/fetch?url=';
 // Cloudflare Worker that forwards requests with a custom Referer header.
